@@ -70,6 +70,16 @@ When the work is done:
 
 Why: an agent that only ships code leaves the user unable to maintain it. They should finish each task slightly more able to do it without you.
 
+## 6. Token Efficiency
+
+**Thorough in reasoning, concise in output.** (from [drona23/claude-token-efficient](https://github.com/drona23/claude-token-efficient))
+
+- Read existing files before writing. Don't re-read unless changed.
+- Skip files over 100KB unless required.
+- No sycophantic openers or closing fluff.
+- No emojis or em-dashes.
+- Do not guess APIs, versions, flags, commit SHAs, or package names. Verify by reading code or docs before asserting.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and stated assumptions get corrected early instead of surfacing as mistakes late.
